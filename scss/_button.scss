@@ -1,0 +1,67 @@
+$Pink: hsl(322, 100%, 66%);
+$Light-Pink: hsl(321, 100%, 78%);
+$Light-Red: hsl(0, 100%, 63%);
+
+input[type="button"],
+input[type="email"],
+input[type="submit"] {
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5rem;
+}
+
+input[type="button"].white {
+  border: 1px solid $Pink;
+  color: $Pink;
+  background-color: white;
+  padding: 0.4rem 1.4rem;
+
+  &:hover {
+    cursor: pointer;
+    border-color: $Light-Pink;
+    color: $Light-Pink;
+  }
+}
+
+input[type="button"].pink,
+input[type="submit"] {
+  font-weight: bold;
+  background: $Pink;
+  color: white;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.199);
+
+  &:hover {
+    cursor: pointer;
+    background: $Light-Pink;
+  }
+}
+
+input[type="email"] {
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid white;
+}
+form.error {
+  input[type="email"] {
+    border-color: $Light-Red;
+  }
+  p {
+    display: block;
+  }
+}
+
+input[type="submit"] {
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  min-width: max-content;
+}
+
+p.error {
+  padding: 0;
+  color: $Light-Red;
+  display: none;
+}

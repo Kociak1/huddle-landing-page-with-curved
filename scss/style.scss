@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+@import "./header";
+@import "./button";
+@import "./ilustrations";
+@import "./footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.602rem;
+}
+h5 {
+  font-size: 1.424rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+.logo {
+  height: 1.25rem;
+}
+
+.ilustration {
+  width: 100%;
+  max-width: 800px;
+}
+
+p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+.back {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.back1 {
+  position: relative;
+  transform: translateY(6px);
+}
+.desktop {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  nav {
+    padding: 4rem 3rem;
+  }
+  header {
+    p {
+      max-width: 55ch;
+      line-height: 1.5rem;
+    }
+    padding: 6rem 15rem;
+    .grid {
+      width: 800px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .il {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 4rem 10rem;
+    gap: 5rem;
+    .ilustration {
+      max-width: 600px;
+      grid-area: img;
+    }
+    div {
+      grid-area: div;
+    }
+  }
+  .lt {
+    grid-template-areas: "div img";
+  }
+  .rg {
+    grid-template-areas: "img div";
+  }
+  .il3 {
+    grid-template-areas: "div div";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  footer {
+    padding: 10rem;
+    display: flex;
+    justify-content: space-between;
+    p {
+      max-width: 40ch;
+    }
+    .one {
+      order: 0;
+    }
+    .two {
+      order: 1;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 400px auto;
+    }
+  }
+  h4 {
+    font-size: 1.802rem;
+  }
+  h3 {
+    font-size: 2.281rem;
+  }
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

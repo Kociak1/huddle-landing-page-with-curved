@@ -1,0 +1,38 @@
+header {
+  padding: 6rem 2rem;
+  padding-bottom: 3rem;
+  .ilustration {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: left;
+
+    span {
+      font-size: 4.11rem;
+      display: block;
+      text-align: left;
+      color: black;
+      font-weight: bold;
+    }
+
+    h5 {
+      font-size: 1rem;
+      text-align: center;
+      color: gray;
+      font-weight: normal;
+    }
+  }
+  p {
+    padding-top: 2rem;
+  }
+}
+.ilustration {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
